@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@200&family=Oswald:wght@600&display=swap');
+
+:root {
+    --cor-primaria: rgb(rgb(7, 15, 43));
+    --cor-primaria2: linear-gradient(90deg, rgba(7, 15, 43, 1) 0%, rgba(27, 26, 85, 1) 100%);
+    --cor-secundaria: white;
+    --cor-terciaria: #535C91;
+    --cor-terciaria-escura: #262c4d;
+    --cor-outros: #444;
+    --cor-digitado: #9290C3;
+
+    --font1: 'Oswald', sans-serif;
+    --font2: 'Montserrat', sans-serif;
+    --font3: 'Krona One', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font1);
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--cor-primaria);
+    background: var(--cor-primaria2)
+}
+
+.card{
+   background: var(--cor-secundaria);
+   padding: 34px;
+   border-radius: 15px;
+   box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.1); 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.campo{
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid --cor-outros;
+    transition: all linear 190ms;
+    font-size: 0.9em;
+    color: var(--cor-terciaria);
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.campo::placeholder {
+    color: var(--cor-outros);
+}
+
+.campo:focus {
+    border-color: var(--cor-digitado);
+}
+
+.btn {
+    padding: 15px;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    border: none;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: var(--cor-terciaria);
+    cursor: pointer;
+    transition: all linear 190ms;
+
+}
+
+.btn:hover{
+    transform: scale(1.07);
+    background-color: var(--cor-terciaria-escura);
+}
+
+p{
+    font-size: 0.9em;
+    color: black;
+}
+
+a{
+    font-size: 0.8em;
+    color:var(--cor-terciaria-escura) ;
+}
